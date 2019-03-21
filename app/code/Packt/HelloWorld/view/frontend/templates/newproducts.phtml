@@ -1,0 +1,11 @@
+<?php /**@var Packt\HelloWorld\Block\Newproducts $block */ ?>
+<h2>New Product</h2>
+<ul>
+<?php $collection = $block->getProducts();
+//$data = $collection->getData();
+?>
+
+<?php foreach($block->getProducts() as $product): ?>
+    <li><?php echo $product->getName() ?></li>
+<?php endforeach; ?>
+</ul>
